@@ -8,25 +8,33 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+				  <form method="post">
+					  <label for="email">Email address</label>
+					  <input type="email" id="email" required="true" placeholder="Enter email"/>
+					  <p>Your information is safe with us.</p>
+					  <label for="password">Password</label>
+					  <input type="password" id="password" required="true" placeholder="Password"/>
+					  <label for="cpassword">Confirm Password</label>
+					  <input type="password" id="cpassword" required="true" placeholder="Confirm Password"/>
+				  </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary">Submit</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
-<div class="toast-container m-auto p-3">
-  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <p>Create Account</p>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-		<label for="email">Email address</label>
-		<input type="email" id="email" required="true" placeholder="Enter email"/>
-		<p>Your information is safe with us.</p>
-		<label for="password">Password</label>
-		<input type="password" id="password" required="true" placeholder="Password"/>
-		<label for="cpassword">Confirm Password</label>
-		<input type="password" id="cpassword" required="true" placeholder="Confirm Password"/>
-		<button type="submit" class="btn-successful text-successful">Submit</button>
-    </div>
-  </div>
-</div>
+
+
+
 	</body>
 </html>
