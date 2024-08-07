@@ -23,23 +23,24 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="post">
+                    <form method="post" id="signUpForm">
                         <div class="mb-3">
-                          <label for="email" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="email" required placeholder="Enter email"/>
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required placeholder="Enter email"/>
                         </div>
                         <div class="mb-3">
-                          <label for="password" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="password" required placeholder="Password"/>
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required placeholder="Password"/>
                         </div>
                         <div class="mb-3">
-                          <label for="cpassword" class="form-label">Confirm Password</label>
-                          <input type="password" class="form-control" id="cpassword" required placeholder="Confirm Password"/>
+                            <label for="cpassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cpassword" required placeholder="Confirm Password"/>
                         </div>
-                      </form>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success" form="signUpForm">Submit</button>
                 </div>
             </div>
         </div>
